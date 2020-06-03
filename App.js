@@ -9,6 +9,11 @@ import ShoulderConditions from "./screens/ConditionsPages/ShoulderConditions";
 import SpineConditions from "./screens/ConditionsPages/SpineConditions";
 import WristHandConditions from "./screens/ConditionsPages/WristHandConditions";
 import DrawerContent from "./screens/DrawerContent";
+import Login from "./screens/Login/Login";
+import LoginForm from "./screens/Login/LoginForm";
+import Register from "./screens/Login/Register";
+import RegisterForm from "./screens/Login/RegisterForm";
+import Welcome from "./screens/Login/Welcome";
 
 export default class App extends Component {
   render() {
@@ -37,18 +42,9 @@ export default class App extends Component {
             <Scene key="ShoulderConditions" component={ShoulderConditions} />
             <Scene key="SpineConditions" component={SpineConditions} />
             <Scene key="WristHandConditions" component={WristHandConditions} />
-            <Scene 
-              key='Login' 
-                component={Login}
-            />
-            <Scene
-              key='Welcome'
-              component={Welcome}
-            />
-            <Scene 
-              key='Register'
-              component={Register}
-            />
+            <Scene key="Login" component={Login} />
+            <Scene key="Welcome" component={Welcome} />
+            <Scene key="Register" component={Register} />
           </Scene>
         </Drawer>
       </Router>
