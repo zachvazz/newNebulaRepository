@@ -8,6 +8,8 @@ import {
   Header,
 } from "react-native";
 import Category from "../category";
+import { Actions } from "react-native-router-flux";
+import LumbarConditions from "./ConditionsPages/LumbarConditions";
 
 const images = {
   lumbar_conditions: require("../assets/lumbar_conditions.jpg"),
@@ -30,6 +32,14 @@ export default class CategoriesScreens extends Component {
     return (
       <View style={styles.container}>
         <View style={styles.category}>
+          <Button
+            onPress={() => {
+              Actions.push("LumbarConditions");
+            }}
+            title="Navigating"
+          >
+            Navigate
+          </Button>
           <Category
             problemName="Lumbar Conditions"
             problemImage={images.lumbar_conditions}

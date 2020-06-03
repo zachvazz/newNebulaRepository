@@ -26,7 +26,7 @@ export default class App extends Component {
               labelStyle={{ color: "black", fontSize: 18 }}
               titleStyle={{ color: "black" }}
             />
-            <Scene key="Lumbar Conditions" component={LumbarConditions} />
+            <Scene key="LumbarConditions" component={LumbarConditions} />
           </Scene>
         </Drawer>
       </Router>
