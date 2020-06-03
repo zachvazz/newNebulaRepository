@@ -3,6 +3,11 @@ import { Router, Scene, Drawer } from "react-native-router-flux";
 
 import CategoriesScreens from "./screens/CategoriesScreens";
 import LumbarConditions from "./screens/ConditionsPages/LumbarConditions";
+import AnkleConditions from "./screens/ConditionsPages/AnkleConditions";
+import KneeConditions from "./screens/ConditionsPages/KneeConditions";
+import ShoulderConditions from "./screens/ConditionsPages/ShoulderConditions";
+import SpineConditions from "./screens/ConditionsPages/SpineConditions";
+import WristHandConditions from "./screens/ConditionsPages/WristHandConditions";
 import DrawerContent from "./screens/DrawerContent";
 
 export default class App extends Component {
@@ -27,6 +32,11 @@ export default class App extends Component {
               titleStyle={{ color: "black" }}
             />
             <Scene key="LumbarConditions" component={LumbarConditions} />
+            <Scene key="AnkleConditions" component={AnkleConditions} />
+            <Scene key="KneeConditions" component={KneeConditions} />
+            <Scene key="ShoulderConditions" component={ShoulderConditions} />
+            <Scene key="SpineConditions" component={SpineConditions} />
+            <Scene key="WristHandConditions" component={WristHandConditions} />
           </Scene>
         </Drawer>
       </Router>

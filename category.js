@@ -19,13 +19,13 @@ export default class Category extends Component {
   render() {
     return (
       <View>
-        <TouchableOpacity onPress={() => Actions.LumbarConditions()}>
+        {/* <TouchableOpacity onPress={() => Actions.LumbarConditions()}>
           <Image
             source={this.props.problemImage}
             style={{ height: 100, width: 100 }}
           />
           <Text>{this.props.problemName}</Text>
-        </TouchableOpacity>
+        </TouchableOpacity> */}
       </View>
     );
   }
