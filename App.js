@@ -37,6 +37,18 @@ export default class App extends Component {
             <Scene key="ShoulderConditions" component={ShoulderConditions} />
             <Scene key="SpineConditions" component={SpineConditions} />
             <Scene key="WristHandConditions" component={WristHandConditions} />
+            <Scene 
+              key='Login' 
+                component={Login}
+            />
+            <Scene
+              key='Welcome'
+              component={Welcome}
+            />
+            <Scene 
+              key='Register'
+              component={Register}
+            />
           </Scene>
         </Drawer>
       </Router>
