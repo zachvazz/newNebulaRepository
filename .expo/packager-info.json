@@ -2,9 +2,9 @@
   "devToolsPort": 19002,
   "expoServerPort": 19000,
   "packagerPort": 19001,
-  "packagerPid": 23220,
+  "packagerPid": 18890,
   "expoServerNgrokUrl": "https://76-a6r.hadiak.newnebularepository.exp.direct",
   "packagerNgrokUrl": "https://packager.76-a6r.hadiak.newnebularepository.exp.direct",
   "ngrokPid": 25220,
-  "webpackServerPort": null
+  "webpackServerPort": 19006
 }
