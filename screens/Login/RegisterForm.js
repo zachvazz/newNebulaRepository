@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import { StyleSheet, View, TextInput, TouchableOpacity, Text, StatusBar, Button } from 'react-native';
 import { Actions } from 'react-native-router-flux';
+import Welcome from './Welcome';
 
 export default class LoginForm extends Component {
     render() {
@@ -39,7 +40,7 @@ export default class LoginForm extends Component {
                 </TouchableOpacity> */}
 
                 <Button
-                onPress={()=>Actions.Register()}
+                onPress={()=>Actions.Welcome()}
                     title='Register'
                 />
             </View>
@@ -52,7 +53,7 @@ const styles = StyleSheet.create({
         padding: 0
     },
     input: {
-        height: 40,
+        height: 30,
         backgroundColor: 'rgba(255,255,255,0.2)',
         color: '#000000',
         paddingHorizontal: 10,
