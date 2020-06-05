@@ -9,7 +9,7 @@ export default class Register extends Component {
                     <View style={styles.logoContainer}>
                         <Image 
                         style={styles.logo}
-                        source={require('../../assets/splash.png')}
+                        source={require('../../assets/Physicus.png')}
                         />
                     </View>
                     <View style={styles.logoContainer}>

@@ -38,10 +38,10 @@ export default class LoginForm extends Component {
 
 const styles = StyleSheet.create({
     container: {
-        padding: 0
+        padding: 10
     },
     input: {
-        height: 40,
+        height: 20,
         backgroundColor: 'rgba(255,255,255,0.2)',
         color: '#000000',
         paddingHorizontal: 10,

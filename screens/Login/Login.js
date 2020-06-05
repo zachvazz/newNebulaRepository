@@ -9,7 +9,7 @@ export default class Login extends Component {
                     <View style={styles.logoContainer}>
                         <Image 
                         style={styles.logo}
-                        source={require('../../assets/splash.png')}
+                        source={require('../../assets/Physicus.png')}
                         />
                         <Text style={styles.title}>An app made for online physiotherapy</Text>
                     </View>
@@ -29,9 +29,9 @@ const styles = StyleSheet.create({
         alignItems: 'center'    
     },
     logoContainer: {
-        marginTop: 120,
+        marginTop: 100,
         alignItems:'center',
-        flexGrow: 2,
+        flexGrow: 1,
         justifyContent : 'center'
     },
     logo: {
