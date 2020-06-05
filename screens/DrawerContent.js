@@ -16,7 +16,7 @@ export default class DrawerContent extends Component {
             <Text style={styles.option}>Login</Text>
           </View>
         </TouchableOpacity>
-        <TouchableOpacity onPress={()=>Actions.Searchscreen()}>
+        <TouchableOpacity onPress={()=>Actions.Search()}>
            <View>
               <Text style={styles.option}>Search</Text>
            </View>

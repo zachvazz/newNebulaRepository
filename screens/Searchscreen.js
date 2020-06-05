@@ -1,19 +1,23 @@
-import SearchBar from "react-native-dynamic-search-bar"
+import { SearchBar } from 'react-native-elements';
 
-<SearchBar
-   onPressToFocus
-   autoFocus={false}
-   fontColor="#c6c6c6"
-   iconColor="#c6c6c6"
-   shadowColor="#282828"
-   cancelIconColor="#c6c6c6"
-   backgroundColor="#353d5e"
-   placeholder="Search here"
-   onChangeText={text => {
-     this.filterList(text);
-   }}
-   onPressCancel={() => {
-     this.filterList("");
-   }}
-   onPress={() => alert("onPress")}
- />
+export default class App extends React.Component {
+  state = {
+    search: '',
+  };
+
+  updateSearch = search => {
+    this.setState({ search });
+  };
+
+  render() {
+    const { search } = this.state;
+
+    return (
+      <SearchBar
+        placeholder="Type Here..."
+        onChangeText={this.updateSearch}
+        value={search}
+      />
+    );
+  }
+}
