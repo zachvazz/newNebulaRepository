@@ -1,6 +1,7 @@
 import { SearchBar } from 'react-native-elements';
+import React, { Component } from "react";
 
-export default class App extends React.Component {
+export default class Searchscreen extends Component {
   state = {
     search: '',
   };
