@@ -15,6 +15,7 @@ import Register from "./screens/Login/Register";
 import RegisterForm from "./screens/Login/RegisterForm";
 import Welcome from "./screens/Login/Welcome";
 import { setCommonConditions } from "./database/CommonConditions";
+import Search from "./screens/Searchscreen";
 
 export default class App extends Component {
   constructor(props) {
