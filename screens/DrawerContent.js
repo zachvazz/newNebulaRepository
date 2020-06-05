@@ -16,11 +16,11 @@ export default class DrawerContent extends Component {
             <Text style={styles.option}>Login</Text>
           </View>
         </TouchableOpacity>
-        <TouchableOpacity onPress={()=>Actions.Search()}>
-                    <View>
-                        <Text style={styles.option}>Search</Text>
-                    </View>
-                </TouchableOpacity>
+        <TouchableOpacity onPress={()=>Actions.Searchscreen()}>
+           <View>
+              <Text style={styles.option}>Search</Text>
+           </View>
+        </TouchableOpacity>
         {/* <TouchableOpacity onPress={()=>Actions.Screen1()}>
 
                     <View>
