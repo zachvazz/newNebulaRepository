@@ -1,10 +1,10 @@
 {
   "devToolsPort": 19002,
   "expoServerPort": 19000,
-  "packagerPort": 19001,
-  "packagerPid": 25959,
-  "expoServerNgrokUrl": null,
-  "packagerNgrokUrl": null,
-  "ngrokPid": null,
-  "webpackServerPort": null
+  "packagerPort": 19003,
+  "packagerPid": 29949,
+  "expoServerNgrokUrl": "https://76-a6r.anonymous.newnebularepository.exp.direct",
+  "packagerNgrokUrl": "https://packager.76-a6r.anonymous.newnebularepository.exp.direct",
+  "ngrokPid": 27176,
+  "webpackServerPort": 19006
 }
