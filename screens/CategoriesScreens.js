@@ -35,7 +35,10 @@ export default class CategoriesScreens extends Component {
       count1: 1,
     };
   }
+<<<<<<< HEAD
     
+=======
+>>>>>>> parent of 7e51a9ff... Update CategoriesScreens.js
   render() {
     return (
       <View style={styles.container}>
