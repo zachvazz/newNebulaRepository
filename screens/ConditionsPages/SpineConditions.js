@@ -10,7 +10,11 @@ export default class SpineConditions extends Component {
   render() {
     return (
       <View>
-        <Text>Spine Conditions Screen</Text>
+        <Text>
+          This is the Spine Conditions page. This page will contain an article
+          that is created by physiotherapists that use our app as an instructor.
+          This will ensure that the information is valid and authentic.
+        </Text>
       </View>
     );
   }

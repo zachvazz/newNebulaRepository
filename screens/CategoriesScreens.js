@@ -35,6 +35,7 @@ export default class CategoriesScreens extends Component {
       count1: 1,
     };
   }
+    
   render() {
     return (
       <View style={styles.container}>

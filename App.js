@@ -14,42 +14,62 @@ import LoginForm from "./screens/Login/LoginForm";
 import Register from "./screens/Login/Register";
 import RegisterForm from "./screens/Login/RegisterForm";
 import Welcome from "./screens/Login/Welcome";
+import { setCommonConditions } from "./database/CommonConditions";
 import Search from "./screens/Searchscreen";
 
 export default class App extends Component {
+  constructor(props) {
+    super(props);
+    this.state = {
+      isLoaded: false,
+    };
+  }
+  componentDidMount() {
+    (async () => {
+      let isInitialized = await setCommonConditions();
+      this.setState({ isLoaded: true });
+    })();
+  }
+
   render() {
-    return (
-      <Router>
-        <Drawer
-          key="drawer"
-          drawer
-          contentComponent={DrawerContent}
-          drawerWidth={220}
-        >
-          <Scene key="root">
-            <Scene
-              key="CategoriesScreens"
-              component={CategoriesScreens}
-              drawer={false}
-              initial
-              title="Most Common Conditions"
-              headerMode="screen"
-              labelStyle={{ color: "black", fontSize: 18 }}
-              titleStyle={{ color: "black" }}
-            />
-            <Scene key="LumbarConditions" component={LumbarConditions} />
-            <Scene key="AnkleConditions" component={AnkleConditions} />
-            <Scene key="KneeConditions" component={KneeConditions} />
-            <Scene key="ShoulderConditions" component={ShoulderConditions} />
-            <Scene key="SpineConditions" component={SpineConditions} />
-            <Scene key="WristHandConditions" component={WristHandConditions} />
-            <Scene key="Login" component={Login} />
-            <Scene key="Welcome" component={Welcome} />
-            <Scene key="Register" component={Register} />
-            <Scene key="Search" component={Search} />
-          </Scene>
-        </Drawer>
-      </Router>
-    );
+    if (this.state.isLoaded) {
+      return (
+        <Router>
+          <Drawer
+            key="drawer"
+            drawer
+            contentComponent={DrawerContent}
+            drawerWidth={220}
+          >
+            <Scene key="root">
+              <Scene
+                key="CategoriesScreens"
+                component={CategoriesScreens}
+                drawer={false}
+                initial
+                title="Most Common Conditions"
+                headerMode="screen"
+                labelStyle={{ color: "black", fontSize: 18 }}
+                titleStyle={{ color: "black" }}
+              />
+              <Scene key="LumbarConditions" component={LumbarConditions} />
+              <Scene key="AnkleConditions" component={AnkleConditions} />
+              <Scene key="KneeConditions" component={KneeConditions} />
+              <Scene key="ShoulderConditions" component={ShoulderConditions} />
+              <Scene key="SpineConditions" component={SpineConditions} />
+              <Scene
+                key="WristHandConditions"
+                component={WristHandConditions}
+              />
+              <Scene key="Login" component={Login} />
+              <Scene key="Welcome" component={Welcome} />
+              <Scene key="Register" component={Register} />
+            </Scene>
+          </Drawer>
+        </Router>
+      );
+    } else {
+      return null;
+    }
   }
 }
