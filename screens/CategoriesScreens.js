@@ -35,6 +35,15 @@ export default class CategoriesScreens extends Component {
       count1: 1,
     };
   }
+    state = {
+      textValue: 'Change me'
+    }
+  
+    onPress = () => {
+      this.setState({
+        textValue: 'Lie on your back on floor with hips and knees bent to 90 degrees with feet flat on floor; draw in abdominal muscles and maintain throughout exercise; slowly and with control, rotate knees to one side keeping hips in contact with the floor'
+      })
+    }
   render() {
     return (
       <View style={styles.container}>
@@ -48,7 +57,15 @@ export default class CategoriesScreens extends Component {
               <Text>Lumbar Conditions</Text>
             </TouchableOpacity>
           </View>
+          state = {
+    textValue}: 'Change me'
+  }
 
+  onPress = () => {
+    this.setState({
+      textValue: 'Trace the alphabet with your toe, which encourages ankle movement in all directions. Trace the alphabet 1 to 3 times.'
+    })
+  }
           <View>
             <TouchableOpacity onPress={() => Actions.AnkleConditions()}>
               <Image
@@ -59,7 +76,15 @@ export default class CategoriesScreens extends Component {
             </TouchableOpacity>
           </View>
         </View>
+        state = {
+    textValue}: 'Change me'
+  }
 
+  onPress = () => {
+    this.setState({
+      textValue: 'Lying on your back, keep one knee bent with your foot flat on the floor. Tighten the knee of the straight leg and lift it up to the height of your bent knee. You will feel your quads and hip flexors working! Perform 2 sets of 10 reps.'
+    })
+  }
         <View style={styles.category}>
           <View>
             <TouchableOpacity onPress={() => Actions.KneeConditions()}>
@@ -70,7 +95,15 @@ export default class CategoriesScreens extends Component {
               <Text>Knee Conditions</Text>
             </TouchableOpacity>
           </View>
+          state = {
+    textValue}: 'Change me'
+  }
 
+  onPress = () => {
+    this.setState({
+      textValue: 'Let your other arm hang down and try to swing it gently backwards and forwards and in a circular motion. Repeat about 5 times.'
+    })
+  }
           <View>
             <TouchableOpacity onPress={() => Actions.ShoulderConditions()}>
               <Image
@@ -81,7 +114,15 @@ export default class CategoriesScreens extends Component {
             </TouchableOpacity>
           </View>
         </View>
+        state = {
+    textValue}: 'Change me'
+  }
 
+  onPress = () => {
+    this.setState({
+      textValue: 'Place your forearm on a table, with your hand and affected wrist extended beyond the table, palm down. Bend your wrist to move your hand upward and allow your hand to close into a fist, then lower your hand and allow your fingers to relax. Hold each position for about 6 seconds. Repeat 8 to 12 times.'
+    })
+  }
         <View style={styles.category}>
           <View>
             <TouchableOpacity onPress={() => Actions.WristHandConditions()}>
@@ -92,7 +133,15 @@ export default class CategoriesScreens extends Component {
               <Text>Wrist/Hand Conditions</Text>
             </TouchableOpacity>
           </View>
+          state = {
+    textValue}: 'Change me'
+  }
 
+  onPress = () => {
+    this.setState({
+      textValue: 'Begin on your hands and knees with your shoulders positioned over your hands. Rock forward onto your arms, round your shoulders and allow your low back to drop toward the floor. Hold for 5 seconds. Rock backward and sit your buttocks as close to your heels as possible. Extend your arms and hold for 5 seconds.'
+    })
+  }
           <View>
             <TouchableOpacity onPress={() => Actions.SpineConditions()}>
               <Image
