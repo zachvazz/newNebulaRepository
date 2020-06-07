@@ -36,7 +36,7 @@ export default class CategoriesScreens extends Component {
     };
   }
     state = {
-      textValue: 'Change me'
+      textValue: 'LumbarConditions'
     }
   
     onPress = () => {
@@ -58,7 +58,7 @@ export default class CategoriesScreens extends Component {
             </TouchableOpacity>
           </View>
           state = {
-    textValue}: 'Change me'
+    textValue}: 'AnkleConditions'
   }
 
   onPress = () => {
@@ -77,7 +77,7 @@ export default class CategoriesScreens extends Component {
           </View>
         </View>
         state = {
-    textValue}: 'Change me'
+    textValue}: 'KneeConditions'
   }
 
   onPress = () => {
@@ -96,7 +96,7 @@ export default class CategoriesScreens extends Component {
             </TouchableOpacity>
           </View>
           state = {
-    textValue}: 'Change me'
+    textValue}: 'ShoulderConditions'
   }
 
   onPress = () => {
@@ -115,7 +115,7 @@ export default class CategoriesScreens extends Component {
           </View>
         </View>
         state = {
-    textValue}: 'Change me'
+    textValue}: 'WristHandConditions'
   }
 
   onPress = () => {
@@ -134,7 +134,7 @@ export default class CategoriesScreens extends Component {
             </TouchableOpacity>
           </View>
           state = {
-    textValue}: 'Change me'
+    textValue}: 'SpineConditions'
   }
 
   onPress = () => {
